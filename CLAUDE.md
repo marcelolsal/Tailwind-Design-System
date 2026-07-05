@@ -19,6 +19,7 @@ Unlike a vendored third-party design system, **this one is editable.** It's your
 - **`IMPLEMENT_PRD.prompt.md`** — AI skill: parses a pasted Design-PRD (Screen Inventory + Per-Screen Specs) and generates/updates the mockups it specifies, idempotent by screen name
 - **`MOUNT_MOCKUPS.prompt.md`** — AI skill: auto-triggered when designer mockups (HTML or ZIP) are attached; validates, organises into `mockups/<feature-slug>/`, and creates a sidebar viewer + master index
 - **`EXPORT_MOCKUPS.prompt.md`** — AI skill: packages standalone HTML mockups into a named ZIP for designer-to-developer handoff
+- **`THEME_APP_EXTENSION.prompt.md`** — AI skill: rules for generating actual Shopify Theme App Extension widgets (app blocks / app embeds) from this system's tokens and markup shape — read this before writing any Liquid block, since the React/Babel prototyping runtime used elsewhere in this repo must never ship inside a real extension asset
 
 ## Rules
 

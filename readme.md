@@ -156,3 +156,4 @@ Read CLAUDE.md once imported for the full rule set, SKILL.md for the AI entry po
 - [`CONTRIBUTING.md`](./CONTRIBUTING.md) — How to add components, tokens, or templates
 - [`CHANGELOG.md`](./CHANGELOG.md) — Version history
 - [`templates/consuming-project-template/README.md`](./templates/consuming-project-template/README.md) — Starter kit for bootstrapping a new project off this system
+- [`THEME_APP_EXTENSION.prompt.md`](./THEME_APP_EXTENSION.prompt.md) — Rules for generating actual Shopify Theme App Extension widgets (app blocks / app embeds) from this system — read before writing any Liquid block

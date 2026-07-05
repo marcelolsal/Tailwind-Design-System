@@ -4,6 +4,14 @@ All notable changes to the Vanilla Tailwind Design System will be documented in 
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [1.1.0] — 2026-07-05
+
+### Added
+- Drop-in "import this into a new session" prompt block in `readme.md`, with strict-copy rules and an after-import verify checklist — so a fresh session can import this repo with nothing to parse or reinterpret
+- `templates/consuming-project-template/` — a second template: a blank starter page + `ds-base.js` loader + README for bootstrapping a brand-new project off this system
+- `THEME_APP_EXTENSION.prompt.md` — rules for generating actual Shopify Theme App Extension widgets (app blocks / app embeds) from this system's tokens and markup shape, including the hard platform limits (10 MB total, 30 blocks, 100 KB Liquid, ~10 KB JS per asset) and why the React/Babel prototyping runtime must never ship inside a real extension
+- Core do/don't rules restated independently in `CLAUDE.md`, the `readme.md` import block, and the new template's `README.md`, so whichever file is read first is self-contained
+
 ## [1.0.0] — 2026-07-05
 
 ### Added
