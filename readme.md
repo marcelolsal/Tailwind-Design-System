@@ -157,3 +157,4 @@ Read CLAUDE.md once imported for the full rule set, SKILL.md for the AI entry po
 - [`CHANGELOG.md`](./CHANGELOG.md) — Version history
 - [`templates/consuming-project-template/README.md`](./templates/consuming-project-template/README.md) — Starter kit for bootstrapping a new project off this system
 - [`THEME_APP_EXTENSION.prompt.md`](./THEME_APP_EXTENSION.prompt.md) — Rules for generating actual Shopify Theme App Extension widgets (app blocks / app embeds) from this system — read before writing any Liquid block
+- [`BRD_INPUT_SPEC.md`](./BRD_INPUT_SPEC.md) — What a BRD/PRD needs to contain for `IMPLEMENT_PRD.prompt.md` to generate a mockup from it, including the Tailwind-shorthand → token translation table. Written for an external BRD-writing skill's author, not just for this repo.
