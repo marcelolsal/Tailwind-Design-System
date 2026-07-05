@@ -8,7 +8,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 - `IMPLEMENT_PRD.prompt.md` now accepts "BRD" as a synonym for Design-PRD, states up front that every mockup is a Theme App Extension widget (no responsive breakpoints, no full-page chrome needed), and restates the master-index/per-group-index contract directly in Step 5
-- `BRD_INPUT_SPEC.md` — the external contract document for a BRD-writing skill in another repo: required document shape, Screen Inventory / Per-Screen Specs fields, what's fixed vs. left to the generator's discretion on regeneration, and a Tailwind-utility-shorthand → design-system-token translation table (since the other repo authors in Tailwind on Preact)
+
+### Note
+- The BRD-input contract for the external BRD-writing skill (required document shape, fixed-vs-discretion fields, Tailwind-shorthand → token translation table) was drafted but intentionally kept out of this repo — it documents a handoff for a different project, not this design system.
 
 ## [1.1.0] — 2026-07-05
 
