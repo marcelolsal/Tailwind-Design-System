@@ -1,0 +1,31 @@
+<!-- @dsCard group="Type" viewport="700x150" name="Font families" subtitle="Poppins UI · JetBrains Mono code" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; padding: 20px; background: var(--background); font-family: var(--font-poppins); color: var(--foreground); }
+  .row { display: flex; gap: 40px; }
+  .block { }
+  .big { font-size: 30px; font-weight: 600; }
+  .mono { font-family: var(--font-code); }
+  .tag { font-size: 11px; color: var(--muted-foreground); font-family: var(--font-code); margin-top: 8px; }
+  .weights { font-size: 13px; color: var(--muted-foreground); margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="block">
+    <div class="big">Poppins</div>
+    <div class="weights">Aa Bb Cc · 300 400 500 600 700 800</div>
+    <div class="tag">--font-poppins</div>
+  </div>
+  <div class="block">
+    <div class="big mono">JetBrains Mono</div>
+    <div class="weights mono">Aa Bb Cc 0123 · 400 500 600 700</div>
+    <div class="tag">--font-code</div>
+  </div>
+</div>
+</body>
+</html>

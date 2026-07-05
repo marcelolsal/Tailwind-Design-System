@@ -1,0 +1,43 @@
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Build artifacts (local dev only — _ds_bundle.js is committed for distribution)
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-project
+.sublime-workspace
+
+# Uploads & temp files
+uploads/
+tmp/
+temp/
+.cache/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Project-specific
+*.log
+debug.log

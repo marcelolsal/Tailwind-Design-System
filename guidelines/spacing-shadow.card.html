@@ -1,0 +1,23 @@
+<!-- @dsCard group="Spacing" viewport="700x150" name="Elevation" subtitle="Shadow tokens xs → lg" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; padding: 24px; background: var(--background); font-family: var(--font-poppins); color: var(--foreground); }
+  .row { display: flex; gap: 28px; }
+  .item { text-align: center; }
+  .box { width: 96px; height: 60px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); }
+  .tag { font-size: 11px; font-family: var(--font-code); color: var(--muted-foreground); margin-top: 12px; }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="item"><div class="box" style="box-shadow:var(--shadow-xs)"></div><div class="tag">--shadow-xs</div></div>
+  <div class="item"><div class="box" style="box-shadow:var(--shadow-sm)"></div><div class="tag">--shadow-sm</div></div>
+  <div class="item"><div class="box" style="box-shadow:var(--shadow-md)"></div><div class="tag">--shadow-md</div></div>
+  <div class="item"><div class="box" style="box-shadow:var(--shadow-lg)"></div><div class="tag">--shadow-lg</div></div>
+</div>
+</body>
+</html>

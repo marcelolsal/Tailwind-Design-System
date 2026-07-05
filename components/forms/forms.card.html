@@ -1,0 +1,54 @@
+<!-- @dsCard group="Components" viewport="700x300" name="Form controls" subtitle="Input, Select, Checkbox, Switch, Label & Field" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../../styles.css" />
+<style>
+  body { margin: 0; padding: 24px; background: var(--background); }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 32px; max-width: 620px; }
+  .row { display: flex; align-items: center; gap: 10px; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<script type="text/babel">
+  const { Input, Select, Checkbox, Switch, Label, Field, FieldDescription } = window.SzumTechDesignSystem_1f5ec4;
+  function Demo() {
+    return (
+      <div className="grid">
+        <Field>
+          <Label htmlFor="e">Email</Label>
+          <Input id="e" placeholder="you@store.com" defaultValue="hello@store.com" />
+          <FieldDescription>We'll never share it.</FieldDescription>
+        </Field>
+        <Field>
+          <Label htmlFor="c">Currency</Label>
+          <Select id="c" defaultValue="usd">
+            <option value="usd">USD $</option>
+            <option value="eur">EUR €</option>
+            <option value="gbp">GBP £</option>
+          </Select>
+          <FieldDescription>Store default currency.</FieldDescription>
+        </Field>
+        <Field>
+          <Label htmlFor="ei">Invalid input</Label>
+          <Input id="ei" invalid defaultValue="not-an-email" />
+        </Field>
+        <div style={{ display: "flex", flexDirection: "column", gap: 12, justifyContent: "center" }}>
+          <label className="row"><Checkbox defaultChecked /> <span style={{ fontSize: 14 }}>Show on storefront</span></label>
+          <label className="row"><Checkbox /> <span style={{ fontSize: 14 }}>Require login</span></label>
+          <label className="row"><Switch defaultChecked /> <span style={{ fontSize: 14 }}>Enable widget</span></label>
+        </div>
+      </div>
+    );
+  }
+  ReactDOM.createRoot(document.getElementById("root")).render(<Demo />);
+</script>
+</body>
+</html>

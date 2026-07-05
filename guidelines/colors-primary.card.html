@@ -1,0 +1,23 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Brand / Primary" subtitle="Indigo-violet primary + foreground" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; padding: 20px; background: var(--background); font-family: var(--font-poppins); }
+  .swatches { display: flex; gap: 14px; flex-wrap: wrap; }
+  .sw { width: 150px; }
+  .chip { height: 64px; border-radius: var(--radius); border: 1px solid var(--border); }
+  .name { font-size: 13px; font-weight: 600; color: var(--foreground); margin-top: 8px; }
+  .val { font-size: 11px; color: var(--muted-foreground); font-family: var(--font-code); }
+</style>
+</head>
+<body>
+<div class="swatches">
+  <div class="sw"><div class="chip" style="background:var(--primary)"></div><div class="name">--primary</div><div class="val">oklch(0.488 0.243 264)</div></div>
+  <div class="sw"><div class="chip" style="background:var(--primary-foreground)"></div><div class="name">--primary-foreground</div><div class="val">oklch(0.97 0.014 254)</div></div>
+  <div class="sw"><div class="chip" style="background:var(--ring)"></div><div class="name">--ring</div><div class="val">oklch(0.708 0 0)</div></div>
+</div>
+</body>
+</html>

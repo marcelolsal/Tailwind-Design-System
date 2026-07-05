@@ -1,0 +1,7 @@
+/* ==========================================================================
+   Fonts — Szum-Tech Design System
+   Poppins (UI/display) + JetBrains Mono (code). These are the actual fonts
+   the source library declares (--font-poppins / --font-code), served here
+   as webfonts via Google Fonts so no binary substitution is required.
+   ========================================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap");

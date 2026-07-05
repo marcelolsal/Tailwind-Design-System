@@ -1,0 +1,24 @@
+<!-- @dsCard group="Spacing" viewport="700x150" name="Radius ladder" subtitle="Derived from --radius (4px)" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; padding: 20px; background: var(--background); font-family: var(--font-poppins); color: var(--foreground); }
+  .row { display: flex; gap: 20px; }
+  .item { text-align: center; }
+  .box { width: 76px; height: 60px; background: var(--secondary); border: 1px solid var(--border); }
+  .tag { font-size: 11px; font-family: var(--font-code); color: var(--muted-foreground); margin-top: 8px; }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="item"><div class="box" style="border-radius:var(--radius-sm)"></div><div class="tag">sm · 2px</div></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius-md)"></div><div class="tag">md · 4px</div></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius-lg)"></div><div class="tag">lg · 8px</div></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius-xl)"></div><div class="tag">xl · 12px</div></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius-full)"></div><div class="tag">full · pill</div></div>
+</div>
+</body>
+</html>

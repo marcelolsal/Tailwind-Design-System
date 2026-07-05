@@ -1,0 +1,24 @@
+<!-- @dsCard group="Spacing" viewport="700x200" name="Spacing scale" subtitle="4px base unit (Tailwind steps)" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; padding: 20px; background: var(--background); font-family: var(--font-poppins); color: var(--foreground); }
+  .row { display: flex; align-items: center; gap: 12px; margin-bottom: 7px; }
+  .bar { height: 14px; background: var(--primary); border-radius: 2px; }
+  .tag { width: 90px; font-size: 11px; font-family: var(--font-code); color: var(--muted-foreground); }
+  .px { font-size: 11px; color: var(--muted-foreground); }
+</style>
+</head>
+<body>
+  <div class="row"><span class="tag">--space-1</span><span class="bar" style="width:4px"></span><span class="px">4px</span></div>
+  <div class="row"><span class="tag">--space-2</span><span class="bar" style="width:8px"></span><span class="px">8px</span></div>
+  <div class="row"><span class="tag">--space-3</span><span class="bar" style="width:12px"></span><span class="px">12px</span></div>
+  <div class="row"><span class="tag">--space-4</span><span class="bar" style="width:16px"></span><span class="px">16px</span></div>
+  <div class="row"><span class="tag">--space-6</span><span class="bar" style="width:24px"></span><span class="px">24px</span></div>
+  <div class="row"><span class="tag">--space-8</span><span class="bar" style="width:32px"></span><span class="px">32px</span></div>
+  <div class="row"><span class="tag">--space-12</span><span class="bar" style="width:48px"></span><span class="px">48px</span></div>
+</body>
+</html>

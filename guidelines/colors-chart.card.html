@@ -1,0 +1,22 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Chart ramp" subtitle="Blue data-viz scale (chart-1 → chart-5)" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; padding: 20px; background: var(--background); font-family: var(--font-poppins); }
+  .ramp { display: flex; gap: 0; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); width: 520px; }
+  .step { flex: 1; height: 72px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 6px; font-size: 11px; font-family: var(--font-code); color: #fff; }
+</style>
+</head>
+<body>
+<div class="ramp">
+  <div class="step" style="background:var(--chart-1);color:#111">1</div>
+  <div class="step" style="background:var(--chart-2)">2</div>
+  <div class="step" style="background:var(--chart-3)">3</div>
+  <div class="step" style="background:var(--chart-4)">4</div>
+  <div class="step" style="background:var(--chart-5)">5</div>
+</div>
+</body>
+</html>

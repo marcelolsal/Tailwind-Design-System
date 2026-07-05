@@ -1,0 +1,13 @@
+/* ==========================================================================
+   Szum-Tech Design System — global entry point
+   Consumers link THIS one file. It is a manifest of @import lines only.
+   Everything reachable from here (tokens, fonts, component CSS) ships to
+   consumers; @font-face / webfont imports in this closure declare the fonts.
+   ========================================================================== */
+
+@import "./tokens/fonts.css";
+@import "./tokens/colors.css";
+@import "./tokens/typography.css";
+@import "./tokens/spacing.css";
+@import "./tokens/base.css";
+@import "./components/components.css";

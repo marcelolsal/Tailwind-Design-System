@@ -1,0 +1,23 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Semantic" subtitle="Success, warning & error" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  body { margin: 0; padding: 20px; background: var(--background); font-family: var(--font-poppins); }
+  .swatches { display: flex; gap: 14px; flex-wrap: wrap; }
+  .sw { width: 150px; }
+  .chip { height: 56px; border-radius: var(--radius); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; }
+  .name { font-size: 12px; font-weight: 600; color: var(--foreground); margin-top: 8px; }
+  .val { font-size: 11px; color: var(--muted-foreground); font-family: var(--font-code); }
+</style>
+</head>
+<body>
+<div class="swatches">
+  <div class="sw"><div class="chip" style="background:var(--success);color:var(--success-foreground)">Success</div><div class="name">--success</div><div class="val">oklch(0.527 0.154 150)</div></div>
+  <div class="sw"><div class="chip" style="background:var(--warning);color:var(--warning-foreground)">Warning</div><div class="name">--warning</div><div class="val">oklch(0.769 0.188 70)</div></div>
+  <div class="sw"><div class="chip" style="background:var(--error);color:var(--error-foreground)">Error</div><div class="name">--error</div><div class="val">oklch(0.577 0.245 27)</div></div>
+</div>
+</body>
+</html>

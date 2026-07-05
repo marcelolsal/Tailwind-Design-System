@@ -1,0 +1,146 @@
+/* ==========================================================================
+   Typography — Szum-Tech Design System
+   Font families, the display/heading/body type scale, line-heights and
+   letter-spacing, verbatim from the source (src/tailwind/typography.css).
+   Also ships ready-to-use type utility classes (.text-display-xl … .text-code)
+   that mirror the library's @utility set, translated to plain CSS with the
+   responsive step at the 768px breakpoint.
+   ========================================================================== */
+
+:root {
+  /* Families */
+  --font-poppins: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-code: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --font-sans: var(--font-poppins);
+
+  /* Font sizes — display */
+  --font-size-display-xl: 4.5rem;   /* 72px */
+  --font-size-display-lg: 3.75rem;  /* 60px */
+  --font-size-display-md: 3rem;     /* 48px */
+  --font-size-display-sm: 2.25rem;  /* 36px */
+
+  /* Font sizes — headings */
+  --font-size-heading-h1: 2rem;     /* 32px */
+  --font-size-heading-h2: 1.5rem;   /* 24px */
+  --font-size-heading-h3: 1.25rem;  /* 20px */
+  --font-size-heading-h4: 1.125rem; /* 18px */
+
+  /* Font sizes — body */
+  --font-size-body-xl: 1.25rem;     /* 20px */
+  --font-size-body-lg: 1.125rem;    /* 18px */
+  --font-size-body-default: 1rem;   /* 16px */
+  --font-size-body-sm: 0.875rem;    /* 14px */
+  --font-size-body-xs: 0.75rem;     /* 12px */
+
+  /* Line heights */
+  --line-height-tight: 1.1;
+  --line-height-snug: 1.2;
+  --line-height-normal: 1.4;
+  --line-height-relaxed: 1.6;
+  --line-height-loose: 1.7;
+
+  /* Letter spacing */
+  --letter-spacing-tighter: -0.02em;
+  --letter-spacing-tight: -0.01em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.05em;
+
+  /* Font weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+}
+
+/* ---- Display -------------------------------------------------------------- */
+.text-display-xl {
+  font-size: var(--font-size-display-md);
+  line-height: var(--line-height-tight);
+  font-weight: 800;
+  letter-spacing: var(--letter-spacing-tighter);
+}
+.text-display-lg {
+  font-size: 2.5rem;
+  line-height: var(--line-height-tight);
+  font-weight: 800;
+  letter-spacing: var(--letter-spacing-tighter);
+}
+.text-display-md {
+  font-size: 2rem;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing-tighter);
+}
+.text-display-sm {
+  font-size: 1.75rem;
+  line-height: var(--line-height-snug);
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+/* ---- Headings ------------------------------------------------------------- */
+.text-heading-h1 {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing-tight);
+}
+.text-heading-h2 {
+  font-size: 1.375rem;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: var(--letter-spacing-tight);
+}
+.text-heading-h3 {
+  font-size: 1.125rem;
+  line-height: var(--line-height-normal);
+  font-weight: 600;
+  letter-spacing: -0.005em;
+}
+.text-heading-h4 {
+  font-size: 1rem;
+  line-height: var(--line-height-normal);
+  font-weight: 600;
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+/* ---- Body ----------------------------------------------------------------- */
+.text-body-xl { font-size: var(--font-size-body-xl); line-height: var(--line-height-relaxed); font-weight: 400; }
+.text-body-lg { font-size: var(--font-size-body-lg); line-height: var(--line-height-relaxed); font-weight: 400; }
+.text-body-default { font-size: var(--font-size-body-default); line-height: var(--line-height-relaxed); font-weight: 400; }
+.text-body-sm { font-size: var(--font-size-body-sm); line-height: 1.5; font-weight: 400; }
+.text-body-xs { font-size: var(--font-size-body-xs); line-height: 1.5; font-weight: 400; }
+
+/* ---- Special ------------------------------------------------------------- */
+.text-lead { font-size: var(--font-size-body-xl); line-height: var(--line-height-loose); font-weight: 400; color: var(--muted-foreground); }
+.text-mute { font-size: var(--font-size-body-sm); line-height: 1.5; font-weight: 400; color: var(--muted-foreground); }
+.text-small { font-size: var(--font-size-body-xs); line-height: 1.4; font-weight: 400; color: var(--muted-foreground); }
+.text-blockquote {
+  font-size: 1rem;
+  line-height: var(--line-height-relaxed);
+  border-left: 2px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted-foreground);
+}
+.text-code {
+  font-family: var(--font-code);
+  font-size: 0.875em;
+  padding: 0.125rem 0.375rem;
+  background: var(--muted);
+  border-radius: var(--radius);
+  color: var(--foreground);
+  font-weight: 500;
+}
+
+/* Responsive step-up (source uses the md: breakpoint = 768px) */
+@media (min-width: 768px) {
+  .text-display-xl { font-size: var(--font-size-display-xl); }
+  .text-display-lg { font-size: var(--font-size-display-lg); }
+  .text-display-md { font-size: var(--font-size-display-md); }
+  .text-display-sm { font-size: var(--font-size-display-sm); }
+  .text-heading-h1 { font-size: var(--font-size-heading-h1); }
+  .text-heading-h2 { font-size: var(--font-size-heading-h2); }
+  .text-heading-h3 { font-size: var(--font-size-heading-h3); }
+  .text-heading-h4 { font-size: var(--font-size-heading-h4); }
+}
