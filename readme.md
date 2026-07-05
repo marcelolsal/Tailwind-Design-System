@@ -1,4 +1,4 @@
-# Szum-Tech Design System
+# Vanilla Tailwind Design System
 
 A **vanilla, framework-agnostic** rebuild of the [`@szum-tech/design-system`](https://github.com/JanSzewczyk/design-system) — retooled for building **Shopify storefront widgets and theme app extensions**, and for authoring in **Preact** (or plain React) with **no Tailwind build step**.
 
@@ -76,6 +76,10 @@ The upstream library is developer tooling; its own copy is terse, technical and 
 **UI kits**
 - `ui_kits/widget-studio/` — Shopify widget-app admin dashboard (interactive), composed from the components above.
 
+**Templates**
+- `templates/widget-settings/` — a `.dc.html` widget-configuration card (Card + Fields + Switch), for the design-doc/preview pipeline.
+- `templates/consuming-project-template/` — a blank starter page + loader script for bootstrapping a brand-new project off this design system. Start here if you're wiring this system into something new.
+
 **Meta**
 - `SKILL.md` — Agent-Skills-compatible entry point.
 - `assets/icons/` — brand SVGs.
@@ -108,3 +112,47 @@ The upstream library is developer tooling; its own copy is terse, technical and 
 The upstream library defines **55+** component families. This project ships a **core 18** most relevant to Shopify widget building. Not yet ported (listed so nothing is silently missing): Accordion, AlertDialog, Breadcrumb, ButtonGroup, Carousel, Collapsible, ColorPicker, ColorSwatch, Combobox, CountingNumber, Dialog, DropdownMenu, Empty, FileUpload, Header, InputGroup, Item, Marquee, Masonry, Pagination, Popover, RadioGroup, ScrollArea, Sheet, Sidebar, Sortable, Stepper, Tabs, Toast (sonner), Tooltip.
 
 > **Missing fonts?** None — Poppins and JetBrains Mono are the source's actual fonts and are served here from Google Fonts, so no substitution was made.
+
+---
+
+## Importing This Design System Into a New Claude Session
+
+When starting a new Claude project and you want to use this design system, copy the prompt below and paste it as your first message. Click the copy button on the code block to grab it.
+
+```text
+Import the Vanilla Tailwind Design System from the following GitHub repository into this project as a bound design system. Import it directly — nothing to think about, nothing to parse, nothing to reinterpret. Drop it in and it works.
+
+Repository: <this repo's URL>
+Branch: main (or master)
+
+RULES:
+- Import EVERY file exactly as-is. No modifications to any .jsx, .d.ts, .prompt.md, .css, .html, or .js file.
+- Preserve the exact folder structure (components/, tokens/, templates/, guidelines/, ui_kits/).
+- Do not add, remove, rename, or restructure anything during import.
+- Do not "improve" or "optimize" any code during import.
+- Do not substitute Tailwind, a component library, or hand-built look-alikes for what's already here.
+- This is an EDITABLE system once imported — after import, you may add new components/tokens/templates following CONTRIBUTING.md. The "don't modify" rules above apply only to the import step itself, not to ongoing use.
+
+AFTER IMPORT — VERIFY:
+- Run check_design_system (or manually count) and confirm: 18 component families, ~100 tokens, 19+ cards, 2 templates.
+- If anything is missing, go back and import the missing files from the repo.
+
+This design system is a vanilla, framework-agnostic rebuild of @szum-tech/design-system for Shopify storefront widgets and Theme App Extensions:
+- Runtime: link styles.css, load _ds_bundle.js, then read components off window.SzumTechDesignSystem_1f5ec4 — no Tailwind, no build step, no CDN component library.
+- Tokens use --primary, --space-*, --radius-*, --font-size-* naming, defined in OKLCH.
+- Fonts are Poppins (UI/display, 300–800) and JetBrains Mono (code/keys/metrics).
+- Base rhythm is 4px; default control height is 32px; base radius is 4px.
+- Copy is sentence case, merchant-second-person, no emoji in product UI.
+
+Read CLAUDE.md once imported for the full rule set, SKILL.md for the AI entry point, and CONTRIBUTING.md before adding anything new.
+```
+
+---
+
+## Additional Documentation
+
+- [`CLAUDE.md`](./CLAUDE.md) — Rules, workflows, and commands for anyone building with this design system
+- [`SKILL.md`](./SKILL.md) — Agent-Skills-compatible entry point
+- [`CONTRIBUTING.md`](./CONTRIBUTING.md) — How to add components, tokens, or templates
+- [`CHANGELOG.md`](./CHANGELOG.md) — Version history
+- [`templates/consuming-project-template/README.md`](./templates/consuming-project-template/README.md) — Starter kit for bootstrapping a new project off this system
