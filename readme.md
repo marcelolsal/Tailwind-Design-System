@@ -125,6 +125,8 @@ Import the Vanilla Tailwind Design System from the following GitHub repository i
 Repository: <this repo's URL>
 Branch: main (or master)
 
+PROJECT NAME: if creating a new design-system project as part of this import, name it "Vanilla Tailwind Design System" — do not leave it at a generic default name.
+
 RULES:
 - Import EVERY file exactly as-is. No modifications to any .jsx, .d.ts, .prompt.md, .css, .html, or .js file.
 - Preserve the exact folder structure (components/, tokens/, templates/, guidelines/, ui_kits/).
@@ -135,6 +137,7 @@ RULES:
 
 AFTER IMPORT — VERIFY:
 - Run check_design_system (or manually count) and confirm: 18 component families, ~100 tokens, 19+ cards, 2 templates.
+- Confirm the project is actually named "Vanilla Tailwind Design System", not a generic default — rename it if it isn't.
 - If anything is missing, go back and import the missing files from the repo.
 
 This design system is a vanilla, framework-agnostic rebuild of @szum-tech/design-system for Shopify storefront widgets and Theme App Extensions:
