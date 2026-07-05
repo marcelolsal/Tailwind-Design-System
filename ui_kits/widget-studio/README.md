@@ -1,6 +1,6 @@
 # Widget Studio — UI kit
 
-A high-fidelity recreation of a **Shopify widget-management app admin**, composed entirely from the Szum-Tech design-system components. It demonstrates how the primitives assemble into a real product surface for building storefront widgets / theme app extensions.
+A high-fidelity recreation of a **Shopify widget-management app admin**, composed entirely from the Vanilla Tailwind Design System components. It demonstrates how the primitives assemble into a real product surface for building storefront widgets / theme app extensions.
 
 ## Files
 - `index.html` — entry; layout chrome (sidebar, top bar, slide-over) in CSS, mounts the app.

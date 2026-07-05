@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Spacing, radius, shadow & motion — Szum-Tech Design System
+   Spacing, radius, shadow & motion — Vanilla Tailwind Design System
    The source builds on Tailwind's default scale (1 unit = 0.25rem / 4px).
    These tokens name the steps the components actually use, plus the radius
    ladder derived from --radius (0.25rem) and the shadow + easing primitives.

@@ -65,7 +65,7 @@ The upstream library is developer tooling; its own copy is terse, technical and 
 - `tokens/base.css` — resets + body defaults.
 - `components/components.css` — every component's styling, keyed on `data-slot`.
 
-**Components** (18 families, `window.SzumTechDesignSystem_*`)
+**Components** (18 families, `window.VanillaTailwindDesignSystem_*`)
 - `button/` — **Button** (6 variants, 8 sizes, loading, icons)
 - `badge/` — **Badge**, **Status** (+ StatusIndicator, StatusLabel)
 - `forms/` — **Input**, **Label**, **Checkbox**, **Switch**, **Select**, **Field** (+ FieldDescription, FieldError)
@@ -93,7 +93,7 @@ The upstream library is developer tooling; its own copy is terse, technical and 
 <link rel="stylesheet" href="styles.css" />
 <script src="_ds_bundle.js"></script>
 <script type="text/babel">
-  const { Button, Card } = window.SzumTechDesignSystem_1f5ec4;
+  const { Button, Card } = window.VanillaTailwindDesignSystem_1f5ec4;
 </script>
 ```
 
@@ -138,7 +138,7 @@ AFTER IMPORT — VERIFY:
 - If anything is missing, go back and import the missing files from the repo.
 
 This design system is a vanilla, framework-agnostic rebuild of @szum-tech/design-system for Shopify storefront widgets and Theme App Extensions:
-- Runtime: link styles.css, load _ds_bundle.js, then read components off window.SzumTechDesignSystem_1f5ec4 — no Tailwind, no build step, no CDN component library.
+- Runtime: link styles.css, load _ds_bundle.js, then read components off window.VanillaTailwindDesignSystem_1f5ec4 — no Tailwind, no build step, no CDN component library.
 - Tokens use --primary, --space-*, --radius-*, --font-size-* naming, defined in OKLCH.
 - Fonts are Poppins (UI/display, 300–800) and JetBrains Mono (code/keys/metrics).
 - Base rhythm is 4px; default control height is 32px; base radius is 4px.

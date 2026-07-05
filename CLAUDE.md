@@ -13,7 +13,7 @@ Unlike a vendored third-party design system, **this one is editable.** It's your
 - **19 preview cards** — `@dsCard`-tagged HTML files (`guidelines/*.card.html`, `components/*/*.card.html`) for the Design System pane
 - **1 UI kit** — `ui_kits/widget-studio/` — a full interactive Shopify widget-admin dashboard built from these components
 - **1 template** — `templates/widget-settings/` — a `.dc.html` widget-settings card for the design-doc/preview pipeline
-- **Runtime:** link `styles.css`, load `_ds_bundle.js`, then read components off `window.SzumTechDesignSystem_1f5ec4`
+- **Runtime:** link `styles.css`, load `_ds_bundle.js`, then read components off `window.VanillaTailwindDesignSystem_1f5ec4`
 - **Fonts:** Poppins (300–800, UI/display), JetBrains Mono (code/keys/metrics)
 - **Foundations:** 16px body, 4px radius base, 32px default control height, indigo-violet primary (`oklch(0.488 0.243 264)`)
 - **`IMPLEMENT_PRD.prompt.md`** — AI skill: parses a pasted Design-PRD (Screen Inventory + Per-Screen Specs) and generates/updates the mockups it specifies, idempotent by screen name
@@ -26,7 +26,7 @@ Unlike a vendored third-party design system, **this one is editable.** It's your
 ### Keep in mind
 - Use only the components and tokens already in this system, or add new ones following `CONTRIBUTING.md` — don't invent one-off custom components that duplicate what's already here
 - Reference the exact token names (`--primary`, `--space-*`, `--radius-*`, `--font-size-*`) rather than hardcoded hex/px values
-- Load `styles.css` + `_ds_bundle.js` and read components off `window.SzumTechDesignSystem_1f5ec4` — don't reintroduce a Tailwind build step
+- Load `styles.css` + `_ds_bundle.js` and read components off `window.VanillaTailwindDesignSystem_1f5ec4` — don't reintroduce a Tailwind build step
 - Follow each component's `.prompt.md` for usage guidance, and `SKILL.md` for overall design-system behavior
 - Sentence case, merchant-second-person copy (see readme.md's "Content fundamentals"), no emoji in product UI
 - Fold every generated mockup into `mockups/<feature-slug>/` and update the index — never leave one as a loose file outside that structure (see "No Orphan Mockups" below)
@@ -52,7 +52,7 @@ This applies retroactively too: if you notice a mockup file sitting outside `moc
 When a user asks you to create a mock, prototype, or design:
 
 1. **Load `styles.css` and `_ds_bundle.js`** in the HTML file
-2. **Use only components from `window.SzumTechDesignSystem_1f5ec4`** — or add a new one first if it genuinely doesn't exist yet
+2. **Use only components from `window.VanillaTailwindDesignSystem_1f5ec4`** — or add a new one first if it genuinely doesn't exist yet
 3. **Use only design tokens** from `tokens/` for any host/chrome styling
 4. **Read the relevant `.prompt.md`** files for component usage
 5. **Determine a feature slug** for this mock (ask one question if unclear) — see "No Orphan Mockups" above
@@ -73,7 +73,7 @@ If someone points at this repo and asks to import it into a new project:
 
 Components are accessed via:
 ```
-window.SzumTechDesignSystem_1f5ec4.ComponentName
+window.VanillaTailwindDesignSystem_1f5ec4.ComponentName
 ```
 
 In `@dsCard` HTML or consuming projects:
@@ -81,6 +81,6 @@ In `@dsCard` HTML or consuming projects:
 <link rel="stylesheet" href="path/to/styles.css" />
 <script src="path/to/_ds_bundle.js"></script>
 <script>
-  const { Button, Card, Badge, Status } = window.SzumTechDesignSystem_1f5ec4;
+  const { Button, Card, Badge, Status } = window.VanillaTailwindDesignSystem_1f5ec4;
 </script>
 ```

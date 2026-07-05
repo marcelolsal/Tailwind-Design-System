@@ -27,7 +27,7 @@ consuming-project-template/
 ## Do / Don't
 
 ✅ **Do:**
-- Use components from `window.SzumTechDesignSystem_1f5ec4`
+- Use components from `window.VanillaTailwindDesignSystem_1f5ec4`
 - Use design tokens (`var(--primary)`, `var(--space-4)`, `var(--radius-md)`, …) for colors, spacing, typography
 - Export and share your mock — it will render identically wherever it's opened
 
@@ -50,13 +50,13 @@ Each component has a `.d.ts` file showing available props and a `.prompt.md` wit
 
 ## Component Namespace
 
-The design system's namespace is `window.SzumTechDesignSystem_1f5ec4`. Load it via the bundle:
+The design system's namespace is `window.VanillaTailwindDesignSystem_1f5ec4`. Load it via the bundle:
 
 ```html
 <link rel="stylesheet" href="../../styles.css" />
 <script src="../../_ds_bundle.js"></script>
 <script type="text/babel">
-  const { Button, Card } = window.SzumTechDesignSystem_1f5ec4;
+  const { Button, Card } = window.VanillaTailwindDesignSystem_1f5ec4;
 </script>
 ```
 

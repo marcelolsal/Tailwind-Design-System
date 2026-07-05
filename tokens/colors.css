@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Colors — Szum-Tech Design System
+   Colors — Vanilla Tailwind Design System
    OKLCH color space, verbatim from the source library (src/tailwind/palette.css).
    Light theme on :root, dark theme on .dark. Every value is a perceptually
    uniform oklch() literal — do NOT hand-tweak; edit the source token instead.

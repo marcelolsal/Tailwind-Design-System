@@ -1,4 +1,4 @@
-const S = window.SzumTechDesignSystem_1f5ec4;
+const S = window.VanillaTailwindDesignSystem_1f5ec4;
 const {
   Button, Card, CardHeader, CardTitle, CardDescription, CardContent,
   Badge, Status, Input, Select, Switch, Checkbox, Label, Field, FieldDescription,

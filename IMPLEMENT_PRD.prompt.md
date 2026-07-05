@@ -93,7 +93,7 @@ For each Per-Screen Spec whose `Reuse:` field is not `new - no existing match`:
    whose label/description plausibly matches the Reuse description, then open
    the specific mockup file that looks closest.
 3. If a confident match is found, use it as the structural/visual base for the
-   new screen - same layout, same components from `window.SzumTechDesignSystem_1f5ec4`,
+   new screen - same layout, same components from `window.VanillaTailwindDesignSystem_1f5ec4`,
    same content model - without copying content verbatim where the new
    Per-Screen Spec differs.
 4. If no confident match is found, do not guess silently. Tell the user:

@@ -8,7 +8,7 @@ This is an editable, local design system — not a vendored external one. You (o
 - **Naming:** PascalCase component names, `data-slot` / `data-variant` / `data-size` attributes in kebab-case
 - **Styling:** plain CSS in `components/components.css`, keyed on the component's `data-slot` — no Tailwind classes, no CSS-in-JS
 - **No new dependencies:** components must render with only React/Preact + this system's own CSS and tokens
-- **Register it:** add the component to `_ds_manifest.json`'s `components` list and rebuild `_ds_bundle.js` (or hand-edit both consistently) so it's reachable via `window.SzumTechDesignSystem_1f5ec4`
+- **Register it:** add the component to `_ds_manifest.json`'s `components` list and rebuild `_ds_bundle.js` (or hand-edit both consistently) so it's reachable via `window.VanillaTailwindDesignSystem_1f5ec4`
 - **Add a preview card:** every new component family needs a `@dsCard`-tagged HTML file (see any existing `*.card.html` for the pattern) so it shows up in the Design System pane
 
 ## Adding or Changing a Token

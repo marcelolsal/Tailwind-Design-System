@@ -4,6 +4,13 @@ All notable changes to the Vanilla Tailwind Design System will be documented in 
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [1.3.0] — 2026-07-05
+
+### Fixed
+- Renamed the component namespace everywhere it appears (`_ds_bundle.js`, `_ds_manifest.json`, every `*.card.html`, `ui_kits/`, templates, docs): `SzumTechDesignSystem_1f5ec4` → `VanillaTailwindDesignSystem_1f5ec4`. This is what a fresh session reads as the mounted design system's name, and it was still showing the old brand — reported after mounting a clean copy into a new session.
+- Renamed `SKILL.md`'s frontmatter `name` from `szum-tech-design` to `vanilla-tailwind-design` (also plausibly read as the mounted skill's identifier).
+- Retitled every "Szum-Tech Design System" comment header (`styles.css`, `tokens/*.css`, `components/components.css`) to "Vanilla Tailwind Design System". Left the lowercase `@szum-tech/design-system` npm-package attribution (the real upstream open-source project this system is rebuilt from) untouched everywhere it appears.
+
 ## [1.2.0] — 2026-07-05
 
 ### Added
@@ -23,7 +30,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [1.0.0] — 2026-07-05
 
 ### Added
-- Initial local snapshot, mirrored from the "Szum-Tech Design System" claude.ai project
+- Initial local snapshot, mirrored from the "Szum-Tech Design System" claude.ai project (that's the source project's actual name on claude.ai — this local repo and its component namespace were rebranded to Vanilla Tailwind Design System per [1.3.0])
 - 18 component families in `components/`: Button, Badge, Status, Card (+6 sub-parts), Avatar, Kbd, Separator, Table (+6 sub-parts), Alert (+2 sub-parts), Progress, Skeleton, Spinner, Checkbox, Field (+2 sub-parts), Input, Label, Select, Switch
 - Design tokens in `tokens/`: OKLCH colors (light + dark), Poppins/JetBrains Mono typography, 4px spacing scale, radius, shadow, motion
 - 19 preview cards under `guidelines/` and `components/*/*.card.html`

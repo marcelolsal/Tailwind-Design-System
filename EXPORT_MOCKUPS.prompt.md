@@ -48,7 +48,7 @@ Each mockup screen must be exported as a **standalone bundled HTML file** using 
 
 **Requirements for each file:**
 - Opens in any browser offline
-- Loads this design system's runtime inlined: `styles.css` + `_ds_bundle.js` (namespace `window.SzumTechDesignSystem_1f5ec4`) — not linked externally
+- Loads this design system's runtime inlined: `styles.css` + `_ds_bundle.js` (namespace `window.VanillaTailwindDesignSystem_1f5ec4`) — not linked externally
 - Includes the Poppins / JetBrains Mono webfonts inlined as base64 (not a live Google Fonts request)
 - Has a `<template id="__bundler_thumbnail">` with a simple SVG splash
 - Renders correctly at 100% zoom in a standard browser window
